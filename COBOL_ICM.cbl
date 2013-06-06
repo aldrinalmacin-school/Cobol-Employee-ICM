@@ -57,7 +57,7 @@
         05 JOB-CLASS-CODE-OUT  PIC XX.
         
        WORKING-STORAGE SECTION.
-       01 WS-MORE-DATA                  PIC X(3)   VALUE "YES".
+       01 WS-MORE-DATA         PIC X(3)   VALUE "YES".
       ***********************************************************
        PROCEDURE DIVISION.
        100-MAIN-MODULE.
