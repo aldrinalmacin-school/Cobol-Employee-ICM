@@ -1,6 +1,6 @@
       * NAME:   ALDRIN JEROME ALMACIN
       * DATE:   JUNE 6, 2013
-      * PURPOSE: TODO*
+      * PURPOSE: TO FORMAT PAYROLL DATA INTO AN OUTPUT FILE.
        IDENTIFICATION DIVISION.
        PROGRAM-ID. ASSIGNMENT1.
       ***********************************************************
@@ -12,7 +12,7 @@
              ORGANIZATION IS LINE SEQUENTIAL.
              
            SELECT PAYROLL-OUT
-             ASSIGN TO "A2OUTPUT.DAT"
+             ASSIGN TO "A1OUTPUT.DAT"
              ORGANIZATION IS LINE SEQUENTIAL.
       ***********************************************************
        DATA DIVISION.
