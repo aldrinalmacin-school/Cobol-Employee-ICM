@@ -9,11 +9,11 @@
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            SELECT PAYROLL-MASTER
-             ASSIGN TO CH0402
+             ASSIGN TO A1IN
              ORGANIZATION IS SEQUENTIAL.
              
            SELECT PAYROLL-OUT
-             ASSIGN TO ALDRINOUT
+             ASSIGN TO A1OUT
              ORGANIZATION IS SEQUENTIAL.
       ***********************************************************
        DATA DIVISION.
