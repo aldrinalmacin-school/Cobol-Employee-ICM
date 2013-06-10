@@ -1,6 +1,7 @@
       * NAME:   ALDRIN JEROME ALMACIN
       * DATE:   JUNE 6, 2013
       * PURPOSE: TO FORMAT PAYROLL DATA INTO AN OUTPUT FILE.
+      * MAINFRAME ID: KC03I4D
        IDENTIFICATION DIVISION.
        PROGRAM-ID. ASSIGNMENT1.
       ***********************************************************
@@ -12,7 +13,7 @@
              ORGANIZATION IS LINE SEQUENTIAL.
              
            SELECT PAYROLL-OUT
-             ASSIGN TO "A1OUTPUT.DAT"
+             ASSIGN TO "ALDRINOUT.DAT"
              ORGANIZATION IS LINE SEQUENTIAL.
       ***********************************************************
        DATA DIVISION.
