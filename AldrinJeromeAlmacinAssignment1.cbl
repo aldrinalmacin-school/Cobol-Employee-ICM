@@ -9,19 +9,19 @@
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            SELECT PAYROLL-MASTER
-             ASSIGN TO "CH0402.DAT"
-             ORGANIZATION IS LINE SEQUENTIAL.
+             ASSIGN TO CH0402
+             ORGANIZATION IS SEQUENTIAL.
              
            SELECT PAYROLL-OUT
-             ASSIGN TO "ALDRINOUT.DAT"
-             ORGANIZATION IS LINE SEQUENTIAL.
+             ASSIGN TO ALDRINOUT
+             ORGANIZATION IS SEQUENTIAL.
       ***********************************************************
        DATA DIVISION.
        FILE SECTION.
        FD PAYROLL-MASTER
           LABEL RECORDS ARE STANDARD
-          RECORD CONTAINS 80 CHARACTERS
-          BLOCK CONTAINS 10 RECORDS.
+          RECORDING MODE IS F
+          RECORD CONTAINS 80 CHARACTERS.
        01 PAYROLL-RECORD-IN.
         05 EMPLOYEE-NUM-IN     PIC X(5).
         05 EMPLOYEE-NAME-IN    PIC X(20).
@@ -36,8 +36,8 @@
        
        FD PAYROLL-OUT
           LABEL RECORDS ARE STANDARD
-          RECORD CONTAINS 67 CHARACTERS
-          BLOCK CONTAINS 10 RECORDS.
+          RECORDING MODE IS F
+          RECORD CONTAINS 67 CHARACTERS.
        01 PAYROLL-RECORD-OUT.
         05                     PIC X(5).
         05 EMPLOYEE-NUM-OUT    PIC X(5).
